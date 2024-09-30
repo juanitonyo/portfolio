@@ -92,3 +92,24 @@ videoModal.onclick = function(event) {
         videoPlayer.src = ''; // Stop the video when modal is closed
     }
 };
+
+let isToggled = false;
+    
+document.getElementById('see-more-btn').addEventListener('click', function() {
+    const wrapper = document.getElementById('grid-wrapper');
+    const fadeOut = document.getElementById('fade-out');
+    const btn = document.getElementById('see-more-btn');
+    
+    // Toggle the height and button text
+    if (!isToggled) {
+        wrapper.classList.remove('max-h-[100px]');
+        fadeOut.classList.add('hidden');
+        btn.textContent = 'See Less';
+        isToggled = true;
+    } else {
+        wrapper.classList.add('max-h-[100px]');
+        fadeOut.classList.remove('hidden');
+        btn.textContent = 'See More';
+        isToggled = false;
+    }
+});
