@@ -1,8 +1,8 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 
 html {
     scroll-behavior: smooth;
@@ -144,6 +144,22 @@ section {
 section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Hide scrollbars when not scrolling */
+.scrollbar-hidden::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Hide scrollbar by default */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Show scrollbar on hover */
+.scroll-container:hover::-webkit-scrollbar {
+    display: block;
 }
   
 @keyframes me {
