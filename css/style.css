@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.me:hover {
+    animation: me 2s ease-in-out 1 forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-btn.active::after,
+.nav-btn:hover::after {
+    width: 100%;
+}
+
+.coolBeans {
+    border: 2px solid currentColor;
+    border-radius: 0.50rem;
+    rotate: 45deg;
+    color: #d7d7d7;
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 1.25rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+.coolBeans::after {
+    background-color: #3B82F6;
+    border-radius: 0.50rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: bottom left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+.coolBeans:hover::after {
+    transform: translate(0, 0);
+}
+.coolBeans:hover {
+    border: 2px solid transparent;
+    color: #4b0082;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Make sure the container takes the full width */
+    height: 50px;
+    position: relative; /* Remove absolute positioning */
+}
+
+.contact-container {
+    justify-content: center; /* Center the content horizontally */
+}
+
+.center {
+    width: 140px;
+    height: 50px;
+    position: relative; /* Remove absolute positioning */
+}
+
+.btn {
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #3B82F6;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-weight: 100;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust the translate value as needed */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Adjust timing and easing as needed */
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+@keyframes me {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}

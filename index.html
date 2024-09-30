@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Montserrat font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Portfolio</title>
+</head>
+<body class="font-montserrat overflow-y-auto">
+    <div class="min-h-screen bg-gradient-to-br from-[#020024] via-[#090979] to-[#090979]">
+        <div id="home" class="flex justify-center items-center min-h-screen">
+            <div class="flex flex-col text-left items-center w-[920px]">
+                <p class="text-blue-500 text-[24px] w-full font-bold">Hi, my name is</p>
+                <p class="text-blue-500 text-[62px] w-full font-bold uppercase tracking-wider">John Mark Pareja.</p>
+                <p class="text-gray-400 text-[40px] w-full font-semibold">Driven by Curiosity, Powered by Code —</p>
+                <p class="text-gray-400 text-[32px] w-full font-semibold">Let’s Build Something Great Together.</p>
+                <div class="flex gap-3 w-full mt-4">
+                    <a href="viber://chat?number=09615025054" class="text-[24px] text-gray-400 hover:text-white">
+                        <i class="fa-brands fa-viber"></i>
+                    </a>
+                    <a href="https://wa.me/639615025054?text=Hi%20John%20Mark%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss%20your%20CV%20for%20a%20job%20opportunity.%20Please%20let%20me%20know%20if%20you%27re%20available%20to%20chat!" target="_blank" class="text-[24px] text-gray-400 hover:text-white">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jmarkpareja" target="_blank" class="text-[24px] text-gray-400 hover:text-white">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/juanitonyo" target="_blank" class="text-[24px] text-gray-400 hover:text-white">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="flex w-full mt-4 container">
+                    <a href="/John Mark Pareja.pdf" class="center" download>
+                        <button class="text-[14px] p-3 btn">
+                            <svg width="140px" height="50px" viewBox="0 0 140 50" class="border">
+                                <polyline points="139,1 139,49 1,49 1,1 139,1" class="bg-line" />
+                                <polyline points="139,1 139,49 1,49 1,1 139,1" class="hl-line" />
+                            </svg>
+                            <span>DOWNLOAD CV</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="navbar" class="flex justify-between h-full px-5 py-3 sticky top-0 bg-[#09023b] z-10 opacity-0 shadow-lg transition-opacity duration-500">
+            <div class="flex flex-col items-center justify-center text-center border border-white rounded-lg h-8 w-8 coolBeans">
+                <p class="text-[18px] text-white font-semibold font-bebas -rotate-45">J</p>
+            </div>
+            <div class="flex justify-end items-center gap-5 mt-2 h-full w-[50%] font-semibold">
+                <button class="nav-btn text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full" onclick="scrollToSection('home')" data-section="home">Home</button>
+                <button class="nav-btn text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full" onclick="scrollToSection('about')" data-section="about">About</button>
+                <button class="nav-btn text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full" onclick="scrollToSection('projects')" data-section="projects">Projects</button>
+                <button class="nav-btn text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full" onclick="scrollToSection('contact')" data-section="contact">Email Me</button>
+            </div>
+        </div>
+        <section id="about" class="flex flex-col w-full justify-center items-center min-h-screen gap-3 pt-24 pb-16">
+            <div class="flex w-full pl-32">
+                <div class="flex flex-col bg-[#09023b] w-[50%] h-auto rounded-3xl p-5" style="z-index: 99; border: 2px solid transparent;">
+                    <div class="flex flex-col w-full justify-center gap-3 text-white font-bold text-[24px]">
+                        <p class="tracking-wide text-right">About Me</p>
+                        <p class="text-[18px] text-justify font-normal">An IT graduate from Technological University of the Philippines - Manila with expertise in web development using frameworks such as Laravel, Vue, and Tailwind.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex -mt-16 justify-end w-full pr-32">
+                <div class="flex flex-col bg-blue-500 w-[70%] h-auto rounded-3xl p-5" style="background-color: rgba(13, 110, 253, 0.8);">
+                    <div class="flex flex-col w-full justify-center gap-3 text-white font-bold text-[24px]">
+                        <p class="tracking-wide text-right w-full">Work Experience</p>
+                        <p class="text-[18px]">Optimum Exchange Remit Incorporated — Project-Based, Junior Full-Stack Developer</p>
+                        <p class="text-[14px] font-semibold">August 2023 - Present</p>
+                        <ul class="list-disc pl-5 text-white text-[14px] font-normal">
+                            <li>Collaborated with a group of web developers to develop web-based remittance system applications.</li>
+                            <li>Efficiently handled the tasks and functionalities needed by users in the production environment.</li>
+                        </ul>
+                        <p class="text-[18px]">Globalland Property Management Incorporated — Intern, Junior Web Developer</p>
+                        <p class="text-[14px] font-semibold">March 2023 - July 2023</p>
+                        <ul class="list-disc pl-5 text-white text-[14px] font-normal">
+                            <li>Developed a <strong>Visitor Management System</strong> for managing building-specific visitors with role-based access.</li>
+                            <li>Managed the system's database, ensuring optimized performance and efficiency.</li>
+                            <li>Gained experience in handling Git repositories and working with frameworks such as Laravel, VueJS, NodeJS, and Tailwind CSS.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-[32px] text-white tracking-wider">Technologies & Frameworks</p>
+            <div class="h-full flex flex-col justify-center items-center">
+                <div class="flex flex-col justify-center w-auto px-7 py-2 rounded-full gap-4">
+                    <div class="flex justify-center gap-4">
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-16" src="/images/html5.png" alt="HTML5 logo">
+                                <p class="text-[18px] text-[#f9951e]">HTML5</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-16" src="/images/js.png" alt="JavaScript logo">
+                                <p class="text-[18px] text-[#f9951e]">JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-12" src="/images/css3.png" alt="CSS3 logo">
+                                <p class="text-[18px] text-[#f9951e]">HTML5</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-16" src="/images/laravel.png" alt="Laravel logo">
+                                <p class="text-[18px] text-[#f9951e]">Laravel</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-16" src="/images/nodejs.png" alt="NodeJS logo">
+                                <p class="text-[18px] text-[#f9951e]">NodeJS</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-16" src="/images/vuejs.png" alt="VueJS logo">
+                                <p class="text-[18px] text-[#f9951e]">VueJS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-12 w-16" src="/images/tailwind.png" alt="Tailwind CSS logo">
+                                <p class="text-[18px] text-[#f9951e] mt-4">Tailwind CSS</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-16" src="/images/mysql.png" alt="MySQL logo">
+                                <p class="text-[18px] text-[#f9951e]">MySQL</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-16" src="/images/php.png" alt="PHP logo">
+                                <p class="text-[18px] text-[#f9951e]">PHP</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-16 w-16" src="/images/csharp.png" alt="C-Sharp logo">
+                                <p class="text-[18px] text-[#f9951e]">C#</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center border-4 border-blue-500 rounded-lg h-[150px] w-[150px]">
+                            <div class="flex flex-col items-center gap-2">
+                                <img class="h-12 w-24 mt-4" src="/images/unity_play.png" alt="Unity Play logo">
+                                <p class="text-[18px] text-[#f9951e] mt-1">Unity Engine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section id="projects" class="flex flex-col items-center min-h-screen mt-4 pt-24 pb-16 px-4 gap-5">
+            <div class="flex justify-center items-center gap-3 w-full">
+                <div class="border-t border-white w-[40%]"></div>
+                <p class="w-[10%] text-center text-[18px] text-white font-semibold tracking-wider uppercase">Projects</p>
+                <div class="border-t border-white w-[40%]"></div>
+            </div>
+            <div class="flex flex-col w-full gap-10 mt-10">
+                <div class="flex w-full project">
+                    <div class="w-[55%] h-auto py-14 ml-10 bg-[#09023b]">
+                        <img class="h-[250px] w-auto object-contain bg-white" src="/images/AIMS-webpage.png" alt="AIMS Sample Page">
+                    </div>
+                    <div class="w-[45%] flex flex-col justify-center -ml-12 uppercase">
+                        <p class="text-white text-[28px] font-semibold mb-2"><span class="normal-case">AllCASH</span> Integrated Money System</p>
+                        <p class="text-[9px] text-[#f9951e] -mt-3">Tags: 
+                            &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">Laravel</span>
+                            &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">VueJS</span>
+                            &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">NodeJS</span>
+                            &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">Tailwind CSS</span>
+                        </p>
+                        <p class="text-[#d7d7d7] text-sm mt-2">A web-based remittance system catering domestic and global transactions</p>
+                    </div>
+                </div>
+                <div class="flex w-full project">
+                    <div class="flex justify-end w-[45%] ml-10" style="z-index: 99;">
+                        <div class="w-full flex flex-col justify-center uppercase -mr-20">
+                            <p class="text-white text-[28px] font-semibold mb-2"><span class="normal-case">AllCASH</span> Remittance Money System</p>
+                            <p class="text-[9px] text-[#f9951e] -mt-3">Tags: 
+                                &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">Laravel</span>
+                                &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">VueJS</span>
+                                &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">NodeJS</span>
+                                &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">Tailwind CSS</span>
+                            </p>
+                            <p class="text-[#d7d7d7] text-sm mt-2">A web-based remittance system catering domestic and global transactions</p>
+                        </div>
+                    </div>
+                    <div class="w-[65%] h-auto py-14 bg-[#09023b] mr-10">
+                        <div class="flex justify-end">
+                            <img class="h-[250px] w-auto object-contain bg-white" src="/images/ARMS-webpage.png" alt="AIMS Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-full project">
+                    <div class="flex flex-col justify-end w-[55%] h-auto py-14 ml-10 bg-[#09023b]">
+                        <div class="flex flex-col justify-end h-full w-auto">
+                            <img class="h-[250px] object-contain" src="/images/survivr-sample.png" alt="AIMS Sample Page">
+                        </div>
+                    </div>
+                    <div class="w-[45%] flex flex-col justify-center -ml-12 uppercase">
+                        <p class="text-white text-[28px] normal-case mb-2">SurviVR</p>
+                        <p class="text-[9px] text-[#f9951e] -mt-3">Tags: 
+                            &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">C#</span>
+                            &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">Unity Play</span>
+                            &nbsp;<span class="text-black bg-[#d7d7d7] border rounded-full px-1 normal-case">Blender</span>
+                        </p>
+                        <p class="text-[#d7d7d7] text-sm mt-2">A thesis-developed VR simulation providing comprehensive guidance, awareness, and preparedness for users regarding the essential do’s and don’ts before, during, and after a typhoon, enhancing safety and resilience in vulnerable communities.</p>
+                        <div class="flex flex-col gap-1 mt-4">
+                            <div class="flex w-full">
+                                <button id="openModal" class="text-white hover:text-blue-500 transition">
+                                    Watch Demo <span class="text-[12px] ml-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </button>
+                            </div>
+                            <div class="flex w-full">
+                                <a href="https://github.com/jcmayrina/SurviVR" target="_blank" class="text-white hover:text-blue-500 transition normal-case cursor-pointer">
+                                    Learn More <span class="text-[12px] ml-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="flex flex-col justify-center items-center min-h-screen w-full gap-3">
+            <form action="https://formspree.io/f/mkgwdqbv" method="POST" class="flex flex-col items-center gap-3 w-full">
+                <p class="text-blue-500 text-[54px] font-bold uppercase">Contact Me</p>
+                <div class="w-[25%] h-[33px]">
+                    <input 
+                        class="w-full h-full bg-[#09023b] text-white px-4" 
+                        placeholder="Name" 
+                        type="text" 
+                        name="name" 
+                        required>
+                </div>
+                <div class="w-[25%] h-[33px]">
+                    <input 
+                        class="w-full h-full bg-[#09023b] text-white px-4" 
+                        placeholder="Email" 
+                        type="email" 
+                        name="email" 
+                        required>
+                </div>
+                <div class="w-[25%] h-[150px]">
+                    <textarea 
+                        class="w-full h-full bg-[#09023b] text-white p-4 placeholder:italic" 
+                        placeholder="Message" 
+                        name="message" 
+                        required>
+                    </textarea>
+                </div>
+                <div class="w-[25%] flex justify-center">
+                    <div class="mt-4 text-white container contact-container">
+                        <div class="center">
+                            <button
+                                type="submit" 
+                                class="text-[14px] p-3 btn">
+                                <svg width="140px" height="50px" viewBox="0 0 140 50" class="border">
+                                    <polyline points="139,1 139,49 1,49 1,1 139,1" class="bg-line" />
+                                    <polyline points="139,1 139,49 1,49 1,1 139,1" class="hl-line" />
+                                </svg>
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <div id="videoModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+            <div class="bg-black p-4 rounded-lg w-11/12 md:w-2/3 lg:w-1/2">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-white">Watch Demo</h2>
+                    <button id="closeModal" class="text-white">&times;</button>
+                </div>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe id="videoPlayer" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/ad3584930d.js" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
