@@ -95,13 +95,13 @@ html {
 }
 
 .center {
-    width: 140px;
+    width: 150px;
     height: 50px;
     position: relative; /* Remove absolute positioning */
 }
 
 .btn {
-    width: 140px;
+    width: 150px;
     height: 50px;
     cursor: pointer;
     background: transparent;
