@@ -18,13 +18,13 @@ function setActiveButton(sectionId) {
 }
 
 function resetInputs() {
-    const name = document.getElementsByName('name');
-    const email = document.getElementsByName('email');
-    const message = document.getElementsByName('message')
+    const name = document.getElementsByName('name')[0];
+    const email = document.getElementsByName('email')[0];
+    const message = document.getElementsByName('message')[0];
 
-    name.value = ''
-    email.value = ''
-    message.value = ''
+    name.value = '';
+    email.value = '';
+    message.value = '';
 }
 
 window.addEventListener('scroll', function() {
