@@ -12,6 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://kit.fontawesome.com/ad3584930d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "_sgov3wWcVq-OQM75",
+            });
+        })();
+    </script>
+    <script src="js/script.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body class="font-montserrat flex w-full overflow-y-auto scrollbar-hidden">
@@ -94,7 +105,7 @@
                 <!-- Wrapper div with max-height -->
                 <div id="grid-wrapper" class="relative max-h-[100px] sm:max-h-none overflow-hidden sm:overflow-visible transition-all duration-500">
                     <!-- Grid layout with justify-items-center to center items -->
-                    <div class="grid grid-cols-4 gap-4 w-full px-7 py-2 rounded-full sm:grid-cols-7 sm:justify-items-center">
+                    <div class="grid grid-cols-4 place-items-center gap-4 w-full px-7 py-2 rounded-full sm:grid-cols-7 sm:justify-items-center">
                         <!-- Example grid items (HTML5, JavaScript, CSS3, etc.) -->
                         <div class="flex flex-col justify-center items-center border-4 border-[#d7d7d7] rounded-lg aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
                             <div class="flex flex-col items-center gap-2">
@@ -270,7 +281,7 @@
             </div>
         </section>
         <section id="contact" class="flex flex-col justify-center items-center min-h-screen w-full gap-3">
-            <form id="contact-form" action="https://formspree.io/f/mkgwdqbv" method="POST" class="flex flex-col items-center gap-3 w-full">
+            <form id="contact-form" class="flex flex-col items-center gap-3 w-full">
                 <p class="text-blue-500 text-[48px] sm:text-[54px] font-bold uppercase">Contact Me</p>
                 <div class="w-[75%] sm:w-[25%] h-[33px]">
                     <input 
@@ -325,10 +336,9 @@
                 </div>
             </div>
         </div>
-
+        <footer class="bg-gray-900 text-white p-4 text-center text-xs">
+            <p>© 2024 John Mark Pareja | <a href="https://github.com/juanitonyo" class="text-blue-400">GitHub</a> | <a href="mailto:johnmarkpareja200@outlook.com" class="text-blue-400">Email</a></p>
+        </footer>
     </div>
-
-    <script src="https://kit.fontawesome.com/ad3584930d.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>

@@ -125,3 +125,27 @@ document.getElementById('see-more-btn').addEventListener('click', function() {
         isToggled = false;
     }
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Collect form data
+    const name = document.getElementsByName('name')[0].value;
+    const email = document.getElementsByName('email')[0].value;
+    const message = document.getElementsByName('message')[0].value;
+
+    // Send the email using EmailJS
+    emailjs.send("service_e2grt66", "template_6e2u6we", {
+        name: name,
+        email: email,
+        message: message
+    })
+    .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+        resetInputs(); // Clear form inputs on success
+    }, function(error) {
+        console.log('FAILED...', error);
+        alert('Failed to send message. Please try again.');
+    });
+});
