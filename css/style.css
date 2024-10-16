@@ -161,6 +161,12 @@ section.visible {
 .scroll-container:hover::-webkit-scrollbar {
     display: block;
 }
+
+.rainbow-text {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
   
 @keyframes me {
     0%, 50%, 100% {
