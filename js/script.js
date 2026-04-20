@@ -52,7 +52,7 @@ function renderNavBar() {
                 <button class="nav-btn text-xs sm:text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full" onclick="scrollToSection('about')" data-section="about">About</button>
                 <button class="nav-btn text-xs sm:text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full" onclick="scrollToSection('projects')" data-section="projects">Projects</button>
                 <button class="nav-btn text-xs sm:text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full" onclick="scrollToSection('contact')" data-section="contact">Email Me</button>
-                <a href="Pareja John Mark R - CV.pdf" download class="nav-btn text-xs sm:text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Download CV</a>
+                <a href="Pareja, John Mark - CV.pdf" download class="nav-btn text-xs sm:text-[16px] text-white relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full">Download CV</a>
             </div>
         </div>`;
     
