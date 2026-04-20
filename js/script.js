@@ -193,11 +193,6 @@ sections.forEach(section => {
 const videoModal = document.getElementById('videoModal');
 const videoPlayer = document.getElementById('videoPlayer');
 
-document.getElementById('openModal').onclick = function() {
-    videoPlayer.src = 'https://www.youtube.com/embed/EinYC1YLHR0';
-    videoModal.classList.remove('hidden');
-};
-
 document.getElementById('closeModal').onclick = function() {
     videoModal.classList.add('hidden');
     videoPlayer.src = '';
@@ -210,26 +205,31 @@ videoModal.onclick = function(event) {
     }
 };
 
-let isToggled = false;
-    
-document.getElementById('see-more-btn').addEventListener('click', function() {
-    const wrapper = document.getElementById('grid-wrapper');
-    const fadeOut = document.getElementById('fade-out');
-    const btn = document.getElementById('see-more-btn');
-    
-    // Toggle the height and button text
-    if (!isToggled) {
-        wrapper.classList.remove('max-h-[100px]');
-        fadeOut.classList.add('hidden');
-        btn.textContent = 'See Less';
-        isToggled = true;
-    } else {
-        wrapper.classList.add('max-h-[100px]');
-        fadeOut.classList.remove('hidden');
-        btn.textContent = 'See More';
-        isToggled = false;
+const imageModal = document.getElementById('imageModal');
+const imageModalImg = document.getElementById('imageModalImg');
+const imageModalCaption = document.getElementById('imageModalCaption');
+
+document.querySelectorAll('.project-image').forEach(function(img) {
+    img.addEventListener('click', function() {
+        imageModalImg.src = this.src;
+        imageModalImg.alt = this.alt;
+        imageModalCaption.textContent = this.dataset.title || '';
+        imageModal.classList.remove('hidden');
+    });
+});
+
+document.querySelector('#imageModal .close-modal').addEventListener('click', function() {
+    imageModal.classList.add('hidden');
+    imageModalImg.src = '';
+});
+
+imageModal.addEventListener('click', function(event) {
+    if (event.target === imageModal) {
+        imageModal.classList.add('hidden');
+        imageModalImg.src = '';
     }
 });
+
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission

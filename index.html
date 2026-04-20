@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,8 +25,8 @@
     <script src="js/script.js" defer></script>
     <title>Portfolio</title>
 </head>
-<body class="font-montserrat flex w-full overflow-y-auto scrollbar-hidden">
-    <div class="flex flex-col min-h-screen h-full w-full bg-gradient-to-br from-[#0582CA] via-[#006494] to-[#003554]">
+<body class="font-montserrat w-full scrollbar-hidden bg-gradient-to-br from-[#0582CA] via-[#006494] to-[#003554]">
+    <div class="flex flex-col min-h-screen w-full">
         <div id="home" class="flex justify-center items-center min-h-screen sm:p-0">
             <div class="flex flex-col text-center items-center w-full sm:text-left sm:w-[920px]">
                 <p class="text-white text-xs sm:text-[24px] w-full font-bold">Hi, my name is</p>
@@ -54,7 +54,7 @@
         </div>
         <section id="about" class="flex flex-col w-full justify-center items-center min-h-screen gap-3 pt-10 sm:pt-24 sm:pb-16">
             <div class="flex w-full px-4 sm:pl-32">
-                <div class="flex flex-col sm:border-none border-4 border-[#051923] rounded-3xl sm:bg-[#051923] sm:w-[50%] h-auto rounded-3xl p-5" style="z-index: 99;">
+                <div class="flex flex-col sm:border-none border-4 border-[#051923] rounded-3xl sm:bg-[#051923] sm:w-[50%] h-auto p-5" style="z-index: 99;">
                     <div class="flex flex-col w-full justify-center gap-3 text-white font-bold text-[24px]">
                         <p class="tracking-wide text-center text-[18px] sm:text-[24px] sm:text-right">About Me</p>
                         <p class="text-[12px] sm:text-[18px] text-justify font-normal">A graduate of the Technological University of the Philippines - Manila with expertise in web development using frameworks like Laravel, Vue, and Tailwind, as well as proficiency in no-code platforms such as WeWeb and Xano.</p>
@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="flex justify-end w-full px-4 sm:-mt-16 sm:pr-32">
-                <div class="flex flex-col sm:w-[70%] h-auto rounded-3xl p-5 border-4 border-[#051923] rounded-3xl">
+                <div class="flex flex-col sm:w-[70%] h-auto rounded-3xl p-5 border-4 border-[#051923]">
                     <div class="flex flex-col w-full justify-center gap-3 text-white font-bold text-[24px]">
                         <p class="tracking-wide w-full text-[18px] sm:text-[24px] text-center sm:text-right">Work Experience</p>
                         <p class="text-[14px] sm:text-[18px]">Clientbook Pte. Ltd. — Full-Time Full-Stack Developer</p>
@@ -88,95 +88,58 @@
                 </div>
             </div>
             <p class="text-[24px] sm:text-[32px] text-white tracking-wider">Technologies & Frameworks</p>
-            <div class="h-full w-full flex flex-col justify-center items-center">
-                <!-- Wrapper div with max-height -->
-                <div id="grid-wrapper" class="relative max-h-[100px] sm:max-h-none overflow-hidden sm:overflow-visible transition-all duration-500">
-                    <!-- Grid layout with justify-items-center to center items -->
-                    <div class="grid grid-cols-5 place-items-center gap-4 w-full px-7 py-2 rounded-full sm:grid-cols-5 sm:justify-items-center">
-                        <!-- Example grid items (HTML5, JavaScript, CSS3, etc.) -->
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-12 w-12 sm:h-20 sm:w-20" src="images/html5.png" alt="HTML5 logo">
-                            </div>
-                        </div>
-            
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-8 w-8 sm:h-16 sm:w-16" src="images/js.png" alt="JavaScript logo">
-                            </div>
-                        </div>
-            
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-12 w-10 sm:h-20 sm:w-16" src="images/css3.png" alt="CSS3 logo">
-                            </div>
-                        </div>
-            
-                        <!-- Add other grid items similarly -->
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-8 w-8 sm:h-16 sm:w-16" src="images/laravel.png" alt="Laravel logo">
-                            </div>
-                        </div>
-            
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-8 w-8 sm:h-20 sm:w-20" src="images/vuejs.png" alt="VueJS logo">
-                            </div>
-                        </div>
-            
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-8 w-8 sm:h-16 sm:w-16" src="images/nodejs.png" alt="NodeJS logo">
-                            </div>
-                        </div>
-            
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-6 w-10 sm:h-16 sm:w-24" src="images/tailwind.png" alt="Tailwind CSS logo">
-                            </div>
-                        </div>
-            
-                        <!-- Add more grid items if needed -->
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-10 w-10 sm:h-16 sm:w-16" src="images/php.png" alt="PHP logo">
-                            </div>
-                        </div>
-            
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-8 w-8 sm:h-16 sm:w-16" src="images/csharp.png" alt="C-Sharp logo">
-                            </div>
-                        </div>
-            
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-6 w-12 sm:h-12 sm:w-24" src="images/unity_play.png" alt="Unity Play Engine logo">
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-10 w-12 sm:h-16 sm:w-24" src="images/weweb.png" alt="Weweb logo">
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col justify-center items-center sm:border-4 sm:border-[#051923] rounded-full aspect-square min-h-[100px] min-w-[100px] sm:min-h-[150px] sm:min-w-[150px]">
-                            <div class="flex flex-col items-center gap-2">
-                                <img class="h-6 w-12 sm:h-12 sm:w-24" src="images/xano.png" alt="Xano logo">
-                            </div>
-                        </div>
+            <div class="w-full max-w-screen-xl px-6 sm:px-16">
+                <div class="grid grid-cols-4 sm:grid-cols-6 gap-4">
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/html5.png" alt="HTML5 logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">HTML5</p>
                     </div>
-            
-                    <!-- Fade-out effect visible only on small screens -->
-                    <div id="fade-out" class="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-white to-transparent pointer-events-none sm:hidden"></div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/js.png" alt="JavaScript logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">JavaScript</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/css3.png" alt="CSS3 logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">CSS3</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/php.png" alt="PHP logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">PHP</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/csharp.png" alt="C# logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">C#</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/laravel.png" alt="Laravel logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">Laravel</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/vuejs.png" alt="VueJS logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">Vue.js</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/nodejs.png" alt="NodeJS logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">Node.js</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/tailwind.png" alt="Tailwind CSS logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">Tailwind CSS</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/unity_play.png" alt="Unity logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">Unity</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/weweb.png" alt="Weweb logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">WeWeb</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 bg-white/5 border border-white/10 rounded-2xl p-4">
+                        <img class="h-10 w-10 sm:h-14 sm:w-14 object-contain" src="images/xano.png" alt="Xano logo">
+                        <p class="text-white text-[10px] sm:text-xs font-medium">Xano</p>
+                    </div>
                 </div>
-            
-                <!-- "See More" Button visible only on small screens -->
-                <button id="see-more-btn" class="mt-4 px-4 py-2 text-white rounded-full transition-all duration-300 sm:hidden">
-                    See More
-                </button>
+            </div>
             </div>
         </section>
         <section id="projects" class="flex flex-col items-center min-h-screen w-full sm:pt-20 mt-4 px-4 gap-5">
@@ -185,106 +148,124 @@
                 <p class="w-[30%] text-center text-[18px] text-white font-semibold tracking-wider uppercase">Projects</p>
                 <div class="border-t border-white w-full"></div>
             </div>
-            <div class="flex flex-col w-full gap-10 mt-10">
-                <div class="flex flex-col-reverse sm:flex-row w-full project">
-                    <div class="flex justify-end w-full sm:w-[45%] sm:ml-10" style="z-index: 99;">
-                        <div class="w-full flex flex-col justify-center uppercase sm:-mr-20">
-                            <p class="text-white text-[14px] sm:text-[28px] text-center sm:text-left font-semibold mb-2"><span class="normal-case">Clientbase's</span> Work Management System</p>
-                            <p class="text-[7px] sm:text-[9px] text-[#f9951e] -mt-2 text-center sm:text-left">Tech Stack: 
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Weweb</span>
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Xano</span>
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">NodeJS</span>
-                            </p>
-                            <p class="text-[#d7d7d7] text-[10px] sm:text-sm text-justify sm:text-left mt-2">A comprehensive work management system featuring an integrated ticketing solution that manages workflow from initial client requests through to project completion and end-user delivery.</p>
-                        </div>
-                    </div>
-                    <div class="sm:w-[65%] h-auto sm:py-14 sm:bg-[#051923] sm:mr-10 sm:border sm:border-[#051923] sm:rounded-3xl">
-                        <div class="flex justify-end">
-                            <img class="sm:h-[250px] w-auto object-contain bg-white" src="images/clientbase-sample.png" alt="AIMS Logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col sm:flex-row w-full project">
-                    <div class="flex w-full sm:w-[55%] h-auto sm:py-14 sm:ml-10 sm:bg-[#051923] sm:border sm:border-[#051923] sm:rounded-3xl">
-                        <img class="sm:h-[250px] w-auto object-contain bg-white" src="images/AIMS-webpage.png" alt="AIMS Sample Page">
-                    </div>
-                    <div class="w-full sm:w-[45%] flex flex-col justify-center sm:-ml-12 uppercase">
-                        <p class="text-white text-[14px] sm:text-[28px] text-center sm:text-left font-semibold mb-2"><span class="normal-case">AllCASH</span> Integrated Money System</p>
-                        <p class="text-[7px] sm:text-[9px] text-[#f9951e] -mt-2 text-center sm:text-left">Tech Stack: 
-                            &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Laravel</span>
-                            &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">VueJS</span>
-                            &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">NodeJS</span>
-                            &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Tailwind CSS</span>
-                        </p>
-                        <p class="text-[#d7d7d7] text-[10px] sm:text-sm text-justify sm:text-left mt-2">A web-based remittance system mainly caters domestic and global transactions and exchange.</p>
-                    </div>
-                </div>
-                <div class="flex flex-col-reverse sm:flex-row w-full project">
-                    <div class="flex justify-end w-full sm:w-[45%] sm:ml-10" style="z-index: 99;">
-                        <div class="w-full flex flex-col justify-center uppercase sm:-mr-20">
-                            <p class="text-white text-[14px] sm:text-[28px] text-center sm:text-left font-semibold mb-2"><span class="normal-case">AllCASH</span> Remittance Money System</p>
-                            <p class="text-[7px] sm:text-[9px] text-[#f9951e] -mt-2 text-center sm:text-left">Tech Stack: 
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Laravel</span>
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">VueJS</span>
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">NodeJS</span>
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Tailwind CSS</span>
-                            </p>
-                            <p class="text-[#d7d7d7] text-[10px] sm:text-sm text-justify sm:text-left mt-2">A web-based remittance system used to process domestic and global transactions, amendments, and inquiries.</p>
-                        </div>
-                    </div>
-                    <div class="sm:w-[65%] h-auto sm:py-14 sm:bg-[#051923] sm:mr-10 sm:border sm:border-[#051923] sm:rounded-3xl">
-                        <div class="flex justify-end">
-                            <img class="sm:h-[250px] w-auto object-contain bg-white" src="images/ARMS-webpage.png" alt="AIMS Logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col sm:flex-row w-full project">
-                    <div class="flex flex-col justify-end sm:w-[55%] h-auto sm:py-14 sm:ml-10 sm:bg-[#051923] sm:border sm:border-[#051923] sm:rounded-3xl">
-                        <div class="flex flex-col justify-end h-full w-auto">
-                            <img class="sm:h-[250px] object-contain" src="images/survivr-sample.png" alt="AIMS Sample Page">
-                        </div>
-                    </div>
-                    <div class="sm:w-[45%] flex flex-col justify-center sm:-ml-12 uppercase">
-                        <p class="text-white text-[14px] sm:text-[28px] text-center sm:text-left font-semibold normal-case mb-2">SurviVR</p>
-                        <p class="text-[7px] sm:text-[9px] text-center sm:text-left text-[#f9951e] -mt-2">Tech Stack: 
-                            &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">C#</span>
-                            &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Unity Play</span>
-                            &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Blender</span>
-                        </p>
-                        <p class="text-[#d7d7d7] text-[10px] sm:text-sm text-justify sm:text-left mt-2">A thesis-developed VR simulation providing comprehensive guidance, awareness, and preparedness for users regarding the essential do’s and don’ts before, during, and after a typhoon, enhancing safety and resilience in vulnerable communities.</p>
-                        <div class="flex sm:flex-col gap-1 mt-4">
-                            <div class="flex justify-center sm:justify-start w-full">
-                                <button id="openModal" class="text-white hover:text-blue-500 transition">
-                                    Watch Demo <span class="text-[10px] sm:text-[12px] ml-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                                </button>
+
+            <div class="grid w-full max-w-screen-xl gap-8 lg:grid-cols-2">
+                <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1">
+                    <div class="grid gap-6 sm:grid-cols-[1.2fr_0.8fr] items-center">
+                        <div class="space-y-4">
+                            <p class="text-[#f9951e] text-xs uppercase tracking-[0.3em]">Featured project</p>
+                            <h3 class="text-white text-2xl font-bold">Clientbase's Work Management System</h3>
+                            <p class="text-slate-300 text-sm leading-6">A comprehensive work management system featuring an integrated ticketing solution that manages workflow from initial client requests through to project completion and end-user delivery.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Weweb</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Xano</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">NodeJS</span>
                             </div>
-                            <div class="flex justify-center sm:justify-start w-full">
-                                <a href="https://github.com/jcmayrina/SurviVR" target="_blank" class="text-white hover:text-blue-500 transition normal-case cursor-pointer">
-                                    Learn More <span class="text-[10px] sm:text-[12px] ml-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-                                </a>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="#contact" class="rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-[#f9951e] hover:text-[#f9951e]">Discuss this project</a>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden rounded-3xl bg-slate-950 p-4">
+                            <img
+                                class="project-image w-full h-[220px] object-contain cursor-pointer"
+                                src="images/clientbase-sample.png"
+                                alt="Clientbase work management system preview"
+                                data-title="Clientbase's Work Management System">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1">
+                    <div class="grid gap-6 sm:grid-cols-[0.9fr_1.1fr] items-center">
+                        <div class="overflow-hidden rounded-3xl bg-slate-950 p-4">
+                            <img class="project-image w-full h-[220px] object-contain cursor-pointer" src="images/AIMS-webpage.png" alt="AllCASH Integrated Money System preview" data-title="AllCASH Integrated Money System">
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-[#f9951e] text-xs uppercase tracking-[0.3em]">Web app</p>
+                            <h3 class="text-white text-2xl font-bold">AllCASH Integrated Money System</h3>
+                            <p class="text-slate-300 text-sm leading-6">A web-based remittance system for domestic and global transactions, designed to simplify payment and exchange workflows.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Laravel</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">VueJS</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">NodeJS</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Tailwind CSS</span>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="#contact" class="rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-[#f9951e] hover:text-[#f9951e]">Talk about this build</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-col-reverse sm:flex-row w-full project">
-                    <div class="flex justify-end w-full sm:w-[45%] sm:ml-10" style="z-index: 99;">
-                        <div class="w-full flex flex-col justify-center uppercase sm:-mr-20">
-                            <p class="text-white text-[14px] sm:text-[28px] text-center sm:text-left font-semibold normal-case mb-2">Visitor Management System</p>
-                            <p class="text-[7px] sm:text-[9px] text-center sm:text-left text-[#f9951e] -mt-2">Tech Stack: 
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Laravel</span>
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">VueJS</span>
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">NodeJS</span>
-                                &nbsp;<span class="text-black bg-[#d7d7d7] rounded-full px-1 normal-case">Tailwind CSS</span>
-                            </p>
-                            <p class="text-[#d7d7d7] text-[10px] sm:text-sm text-justify sm:text-left mt-2">A web-based Visitor Management System streamlines visitor registration, tracking, and security. It allows online check-ins, pre-registration, and provides real-time monitoring, enhancing security and visitor experience.</p>
+                </article>
+
+                <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1">
+                    <div class="grid gap-6 sm:grid-cols-[1.2fr_0.8fr] items-center">
+                        <div class="space-y-4">
+                            <p class="text-[#f9951e] text-xs uppercase tracking-[0.3em]">Web app</p>
+                            <h3 class="text-white text-2xl font-bold">AllCASH Remittance Money System</h3>
+                            <p class="text-slate-300 text-sm leading-6">A web-based remittance system used to process domestic and global transactions, amendments, and inquiries with a clean, modern interface.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Laravel</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">VueJS</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">NodeJS</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Tailwind CSS</span>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="#contact" class="rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-[#f9951e] hover:text-[#f9951e]">Request a case study</a>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden rounded-3xl bg-slate-950 p-4">
+                            <img
+                                class="project-image w-full h-[220px] object-contain cursor-pointer"
+                                src="images/ARMS-webpage.png"
+                                alt="AllCASH Remittance Money System preview"
+                                data-title="AllCASH Remittance Money System">
                         </div>
                     </div>
-                    <div class="sm:w-[65%] h-auto sm:py-14 sm:bg-[#051923] sm:mr-10 sm:border sm:border-[#051923] sm:rounded-3xl">
-                        <div class="flex justify-end">
-                            <img class="sm:h-[250px] w-auto object-contain bg-white" src="images/VMS-sample.png" alt="Sample VMS webpage (Dashboard)">
+                </article>
+
+                <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1">
+                    <div class="grid gap-6 sm:grid-cols-[0.9fr_1.1fr] items-center">
+                        <div class="overflow-hidden rounded-3xl bg-slate-950 p-4">
+                            <img class="project-image w-full h-[220px] object-contain cursor-pointer" src="images/survivr-sample.png" alt="SurviVR project preview" data-title="SurviVR">
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-[#f9951e] text-xs uppercase tracking-[0.3em]">VR simulation</p>
+                            <h3 class="text-white text-2xl font-bold">SurviVR</h3>
+                            <p class="text-slate-300 text-sm leading-6">A VR simulation for typhoon preparedness that guides users through essential safety steps before, during, and after a storm.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">C#</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Unity Play</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Blender</span>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="https://github.com/jcmayrina/SurviVR" target="_blank" class="rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-[#f9951e] hover:text-[#f9951e]">GitHub repo</a>
+                                <a href="#contact" class="rounded-full bg-[#f9951e] px-4 py-2 text-sm font-semibold text-slate-950">Talk about this project</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1">
+                    <div class="grid gap-6 sm:grid-cols-[1.2fr_0.8fr] items-center">
+                        <div class="space-y-4">
+                            <p class="text-[#f9951e] text-xs uppercase tracking-[0.3em]">Web app</p>
+                            <h3 class="text-white text-2xl font-bold">Visitor Management System</h3>
+                            <p class="text-slate-300 text-sm leading-6">A visitor management system that streamlines registration, tracking, and security with online check-ins and real-time monitoring.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Laravel</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">VueJS</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">NodeJS</span>
+                                <span class="rounded-full bg-white/10 px-3 py-1 text-[11px] text-white">Tailwind CSS</span>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <a href="#contact" class="rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-[#f9951e] hover:text-[#f9951e]">Start a conversation</a>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden rounded-3xl bg-slate-950 p-4">
+                            <img class="project-image w-full h-[220px] object-contain cursor-pointer" src="images/VMS-sample.png" alt="Visitor Management System preview" data-title="Visitor Management System">
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
         <section id="contact" class="flex flex-col justify-center items-center min-h-screen w-full gap-3">
@@ -314,7 +295,7 @@
                         required>
                     </textarea>
                 </div>
-                <div class="w-[25%] flex justify-center">
+                <div class="w-[75%] sm:w-[25%] flex justify-center">
                     <div class="mt-4 text-white container contact-container">
                         <div class="center">
                             <button
@@ -341,6 +322,13 @@
                 <div class="aspect-w-16 aspect-h-9">
                     <iframe id="videoPlayer" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                 </div>
+            </div>
+        </div>
+        <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center p-4">
+            <div class="relative max-w-5xl w-full">
+                <button class="close-modal absolute top-3 right-3 text-white text-3xl leading-none">&times;</button>
+                <img id="imageModalImg" class="w-full max-h-[85vh] object-contain rounded-3xl border border-white/20" src="" alt="Project screenshot preview">
+                <p id="imageModalCaption" class="mt-4 text-center text-white text-sm"></p>
             </div>
         </div>
         <footer class="bg-gray-900 text-white p-4 text-center text-xs">
